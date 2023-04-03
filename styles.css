@@ -1,0 +1,139 @@
+body{
+    background-color: #755338;
+}
+
+main{
+    width: 50%;
+    height: 50%;
+    gap : 5px;
+    padding: 2%;
+    background-color: #e3c7b1;
+    color: #3b3736;
+    margin: 10% auto;
+}
+
+a{
+  color: #3b3736;
+}
+
+a:hover{
+  color: #755338;
+}
+
+.home{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projects{
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.homecontent{
+  text-align: center;
+}
+
+#profile{
+   width: 200px;
+   border-radius: 50%;
+   padding-bottom: 2%;
+}
+
+h2{
+  text-align: center;
+}
+
+span{
+  font-weight: bold;
+  display: table;
+  margin: 0 auto;
+}
+
+.about{
+  padding: 2%;
+}
+
+.portfolio{
+  width: 75%;
+  margin: 10%;
+}
+
+/* Dropdown Button */
+.dropbtn, .contactbtn{
+    background-color: #3b3736;
+    color: #e3c7b1;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3b3736;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e3c7b1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #3b3736;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #68604b;
+    color: #e3c7b1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+@media only screen and (max-width: 1000px) {
+    main{
+      text-align: center;
+      margin-top: 25%;
+    }
+    #profile{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .projects{
+      flex-wrap: wrap;
+    }
+  }
+
+@media only screen and (min-width: 1200px) {
+    .homecontent{
+        padding-top: 5%;
+      }
+    #profile{
+        width: 300px;
+    }
+  }
+
